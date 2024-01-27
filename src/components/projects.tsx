@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { Project } from './project'
+import { Tag } from './tag'
 
 export function Projects() {
   return (
@@ -12,154 +14,85 @@ export function Projects() {
         Dê uma olhada nos meus projetos em destaque
       </h2>
 
-      <div className="mt-10 flex gap-4 flex-col sm:flex-row">
-        <a
-          href="https://simplebot.vercel.app/"
-          target="_blank"
-          className="bg-surface-primary sm:p-6 p-4 flex flex-col max-w-[384px] h-[464px] rounded-lg"
+      <div className="mt-10 flex flex-wrap gap-4 flex-col sm:flex-row">
+        <Project
+          imageUrl="/simplebot.png"
+          date="Out - Mar 2024"
+          description="Plataforma de automação de WhatsApp, para criação de atendimentos automaticos."
+          title="Vunex"
+          link="https://simplebot.vercel.app/"
         >
-          <Image
-            src="/simplebot.png"
-            height={216}
-            width={336}
-            alt="projeto vunex"
-            className="rounded-t-lg overflow-hidden w-[336px] h-[216px]"
-          />
+          <Tag title="ReactJS" />
+          <Tag title="NextJs" />
+          <Tag title="ShadcnUI" />
+          <Tag title="Tailwind" />
+          <Tag title="Tanstack Query" />
+          <Tag title="Typescript" />
+        </Project>
 
-          <span className="mt-4 text-text-secondary text-sm">
-            Out - Mar 2024
-          </span>
-
-          <div className="flex gap-2 my-2 flex-wrap">
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              ReactJS
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              NextJs
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Typescript
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              ShadcnUI
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Tailwind
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Tanstack Query
-            </div>
-          </div>
-
-          <h3 className="font-medium text-base">Vunex</h3>
-          <span className="text-base mt-2">
-            Plataforma de automação de WhatsApp, para criação de atendimentos
-            automaticos.
-          </span>
-        </a>
-
-        <a
-          href="https://github.com/melquisedeque-magalhaes/uber-clone"
-          target="_blank"
-          className="bg-surface-primary sm:p-6 p-4 flex flex-col max-w-[384px] h-[464px] rounded-lg"
+        <Project
+          imageUrl="/uber-clone.png"
+          date="28 - Jan 2022"
+          description="Clone do aplicativo Uber"
+          title="Uber Clone"
+          link="https://github.com/melquisedeque-magalhaes/uber-clone"
         >
-          <Image
-            src="/uber-clone.png"
-            height={216}
-            width={336}
-            alt="projeto vunex"
-            className="rounded-t-lg overflow-hidden w-[336px] h-[216px]"
-          />
+          <Tag title="React Native" />
+          <Tag title="Expo" />
+          <Tag title="React Native Navigation" />
+          <Tag title="MapView" />
+          <Tag title="Styled Components" />
+          <Tag title="Typescript" />
+        </Project>
 
-          <span className="mt-4 text-text-secondary text-sm">
-            28 - Jan 2022
-          </span>
-
-          <div className="flex gap-2 my-2 flex-wrap">
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              React Native
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Expo
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              React Native Navigation
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              MapView
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Styled Components
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Typescript
-            </div>
-          </div>
-
-          <h3 className="font-medium text-base">Uber Clone</h3>
-
-          <span className="text-base mt-2">Clone do aplicativo Uber</span>
-        </a>
-
-        <a
-          href="https://github.com/melquisedeque-magalhaes/simpleanime"
-          target="_blank"
-          className="bg-surface-primary sm:p-6 p-4 flex flex-col max-w-[384px] h-[464px] rounded-lg"
+        <Project
+          imageUrl="/ignews.png"
+          date="Abr - Set 2022"
+          description="IGNEWS - Portal de notícias"
+          title="Ignews"
+          link="https://ignews-ten.vercel.app/"
         >
-          <Image
-            src="/simpleanime5.png"
-            height={216}
-            width={336}
-            alt="projeto vunex"
-            className="rounded-t-lg overflow-hidden w-[336px] h-[216px]"
-          />
+          <Tag title="ReactJS" />
+          <Tag title="NextJs" />
+          <Tag title="Prismic CMS" />
+          <Tag title="Stripe" />
+          <Tag title="FaunaDB" />
+          <Tag title="Typescript" />
+          <Tag title="Sass" />
+        </Project>
 
-          <span className="mt-4 text-text-secondary text-sm">
-            06 - Jan 2023
-          </span>
+        <Project
+          imageUrl="/simpleanime5.png"
+          date="06 - Jan 2023"
+          description="Aplicativo mobile para assistir animes"
+          title="SimpleAnime"
+          link="https://github.com/melquisedeque-magalhaes/simpleanime"
+        >
+          <Tag title="React Native" />
+          <Tag title="Expo" />
+          <Tag title="Expo Router" />
+          <Tag title="MapView" />
+          <Tag title="NativeWind" />
+          <Tag title="Tanstack Query" />
+          <Tag title="Typescript" />
+        </Project>
 
-          <div className="flex gap-2 my-2 flex-wrap">
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              React Native
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Expo
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Expo Router
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              NativeWind
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Tanstack Query
-            </div>
-
-            <div className="bg-surface-background rounded-lg border border-primary-500 py-1 px-2 flex items-center justify-center text-sm">
-              Typescript
-            </div>
-          </div>
-
-          <h3 className="font-medium text-base">SimpleAnime</h3>
-
-          <span className="text-base mt-2">
-            Aplicativo mobile para assistir animes
-          </span>
-        </a>
+        <Project
+          imageUrl="/rsxp2.png"
+          date="Abr - Mai 2023"
+          description="Rocketseat Experience 2023 - Mobile App"
+          title="Rsxp 2023"
+          link="https://github.com/melquisedeque-magalhaes/rsxp-2023"
+        >
+          <Tag title="React Native" />
+          <Tag title="Expo" />
+          <Tag title="NativeWind" />
+          <Tag title="NestJS" />
+          <Tag title="Prisma" />
+          <Tag title="Typescript" />
+          <Tag title="PostgreSQL" />
+          <Tag title="Sympla API" />
+        </Project>
       </div>
 
       <Image
