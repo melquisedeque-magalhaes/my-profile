@@ -24,9 +24,13 @@ export function Contact() {
 
         <p className="text-base">
           I am always up for a chat. Pop me an email at{' '}
-          <span className="text-secondary-500 underline">
+          <a
+            href="melqui.sodre15@gmail.com"
+            target="_blank"
+            className="text-secondary-500 underline"
+          >
             melqui.sodre15@gmail.com
-          </span>{' '}
+          </a>{' '}
           or give me a shout on social media.
         </p>
 
