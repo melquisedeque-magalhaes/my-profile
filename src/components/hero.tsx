@@ -21,27 +21,23 @@ export function Hero() {
         </p>
 
         <div className="flex items-center mt-8 sm:gap-4 gap-2">
-          <div className="w-44">
-            <a
-              href="/Profile.pdf"
-              download
-              className="flex items-center py-4 sm:px-6 px-4 gap-2 rounded-lg bg-surface-secondary hover:opacity-90 transition-opacity"
-            >
-              <NotebookText className="w-6 h-6 text-text-primary" />
-              Meu curriculo
-            </a>
-          </div>
+          <a
+            href="/Profile.pdf"
+            download
+            className="w-44 flex items-center py-4 px-4 gap-2 rounded-lg bg-surface-secondary hover:opacity-90 transition-opacity"
+          >
+            <NotebookText className="w-6 h-6 text-text-primary" />
+            Meu curriculo
+          </a>
 
-          <div className="w-44">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/melqui-sodre/"
-              className="w-full flex items-center py-4 sm:px-6 text-base px-4 justify-between rounded-lg bg-primary-500 hover:opacity-90 transition-opacity"
-            >
-              Meu Linkedin
-              <ArrowRight className="w-6 h-6 text-text-primary" />
-            </a>
-          </div>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/melqui-sodre/"
+            className="w-44 flex items-center py-4 text-base px-4 justify-between rounded-lg bg-primary-500 hover:opacity-90 transition-opacity"
+          >
+            Meu Linkedin
+            <ArrowRight className="w-6 h-6 text-text-primary" />
+          </a>
         </div>
       </div>
 

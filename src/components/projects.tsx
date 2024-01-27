@@ -9,7 +9,7 @@ export function Projects() {
       <span className="text-base text-secondary-500 font-kalam">Projetos</span>
 
       <h2 className="text-2xl font-medium">
-        Take a look at my highlighted projects
+        Dê uma olhada nos meus projetos em destaque
       </h2>
 
       <div className="mt-10 flex gap-4 flex-col sm:flex-row">

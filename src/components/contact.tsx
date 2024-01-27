@@ -19,11 +19,12 @@ export function Contact() {
         <span className="text-base text-secondary-500 font-kalam">Contato</span>
 
         <h3 className="text-2xl font-medium">
-          Enjoyed my work? Lets work together
+          Gostou do meu trabalho? Vamos trabalhar juntos
         </h3>
 
         <p className="text-base">
-          I am always up for a chat. Pop me an email at{' '}
+          Estou sempre a disposição para atender o seu projeto, ou apenas trocar
+          uma ideia. pode entrar em contato pelo meu e-mail{' '}
           <a
             href="mailto:melqui.sodre15@gmail.com?subject=Entrando em contato pelo seu site&body=Olá, Melqui"
             target="_blank"
@@ -31,7 +32,7 @@ export function Contact() {
           >
             melqui.sodre15@gmail.com
           </a>{' '}
-          or give me a shout on social media.
+          ou pelas minhas redes sociais.
         </p>
 
         <div className="flex gap-4">
