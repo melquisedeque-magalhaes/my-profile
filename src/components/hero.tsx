@@ -21,15 +21,19 @@ export function Hero() {
         </p>
 
         <div className="flex items-center mt-8 gap-4">
-          <button className="flex items-center py-4 px-6 gap-2 rounded-lg bg-surface-secondary hover:opacity-90 transition-opacity">
-            <NotebookText className="w-6 h-6 text-text-primary" />
-            Meu curriculo
-          </button>
+          <div className="w-48">
+            <button className="flex items-center py-4 px-6 gap-2 rounded-lg bg-surface-secondary hover:opacity-90 transition-opacity">
+              <NotebookText className="w-6 h-6 text-text-primary" />
+              Meu curriculo
+            </button>
+          </div>
 
-          <ButtonPrimary>
-            Get in touch
-            <ArrowRight className="w-6 h-6 text-text-primary" />
-          </ButtonPrimary>
+          <div className="w-48">
+            <ButtonPrimary>
+              Get in touch
+              <ArrowRight className="w-6 h-6 text-text-primary" />
+            </ButtonPrimary>
+          </div>
         </div>
       </div>
 
