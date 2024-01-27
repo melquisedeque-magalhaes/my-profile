@@ -25,7 +25,7 @@ export function Contact() {
         <p className="text-base">
           I am always up for a chat. Pop me an email at{' '}
           <a
-            href="melqui.sodre15@gmail.com"
+            href="mailto:melqui.sodre15@gmail.com?subject=Entrando em contato pelo seu site&body=Olá, Melqui"
             target="_blank"
             className="text-secondary-500 underline"
           >

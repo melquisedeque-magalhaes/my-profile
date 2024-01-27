@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { ButtonPrimary } from './button-primary'
 import { NotebookText } from 'lucide-react'
 
 export function AboutMe() {
@@ -18,27 +17,30 @@ export function AboutMe() {
 
       <div className="flex flex-col justify-center max-w-[592px]">
         <span className="text-base text-secondary-500 font-kalam">
-          About me
+          Sobre mim
         </span>
 
         <h2 className="text-2xl font-medium mt-2">
-          I’m a passionate software developer looking for my first international
-          oppotunity
+          Sou dev FullStack, trabalho com React, React Native e NodeJS
         </h2>
 
         <p className="text-base mt-4">
-          Beyond coding, I am a coffee enthusiast, a cat lover, and a
-          self-taught artist who enjoys spending my free time doodling. I am
-          currently seeking opportunities to bring my skills and enthusiasm to a
-          tech company in the United States or Europe and am excited about the
-          prospect of relocating to pursue new challenges.
+          Sempre aprendendo as melhores tecnologias, para continuar evoluindo.
+          Atualmente Estudando Javascript e Typescript focado nos frameworks
+          ReactJs e NodeJs e React Native, GraphQl, Micro-Frontend com Module
+          Federation e Single SPA. Sempre construindo Softwares bem estruturados
+          e usando a engenharia de software para ter o melhor desenvolvimento.
         </p>
 
         <div className="w-48 mt-4">
-          <ButtonPrimary>
+          <a
+            className="w-full flex items-center py-4 sm:px-6 text-base px-4 justify-between rounded-lg bg-primary-500 hover:opacity-90 transition-opacity"
+            href="/Profile.pdf"
+            download
+          >
             <NotebookText className="w-6 h-6 text-text-primary" />
             Meu curriculo
-          </ButtonPrimary>
+          </a>
         </div>
       </div>
     </div>

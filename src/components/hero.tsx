@@ -15,24 +15,32 @@ export function Hero() {
         </h2>
 
         <p className="mt-4 text-base">
-          Over 4 years of experience in the tech industry. I specialize in
-          building innovative web and mobile applications using technologies
-          such as React, React Native, and Node.js.
+          Tenho mais de 4 anos de experiencia no mercado de trabalho, Sou
+          especializado em construir aplicações web e mobile, usando as
+          tecnologias ReactJs, React Native e NodeJS.
         </p>
 
-        <div className="flex items-center mt-8 gap-4">
-          <div className="w-48">
-            <button className="flex items-center py-4 px-6 gap-2 rounded-lg bg-surface-secondary hover:opacity-90 transition-opacity">
+        <div className="flex items-center mt-8 sm:gap-4 gap-2">
+          <div className="w-44">
+            <a
+              href="/Profile.pdf"
+              download
+              className="flex items-center py-4 sm:px-6 px-4 gap-2 rounded-lg bg-surface-secondary hover:opacity-90 transition-opacity"
+            >
               <NotebookText className="w-6 h-6 text-text-primary" />
               Meu curriculo
-            </button>
+            </a>
           </div>
 
-          <div className="w-48">
-            <ButtonPrimary>
-              Get in touch
+          <div className="w-44">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/melqui-sodre/"
+              className="w-full flex items-center py-4 sm:px-6 text-base px-4 justify-between rounded-lg bg-primary-500 hover:opacity-90 transition-opacity"
+            >
+              Meu Linkedin
               <ArrowRight className="w-6 h-6 text-text-primary" />
-            </ButtonPrimary>
+            </a>
           </div>
         </div>
       </div>
