@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Heebo, Kalam } from 'next/font/google'
 import { Toaster } from 'sonner'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
 const heebo = Heebo({
@@ -31,6 +33,8 @@ export default function RootLayout({
       <body className="bg-surface-background font-heebo text-white scroll-smooth antialiased">
         {children}
         <Toaster />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
